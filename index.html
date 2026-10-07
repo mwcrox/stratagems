@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06121a">
+  <meta name="description"
+    content="An interactive periodic table of 109 Helldivers 2 stratagems and a playable Stratagem Hero.">
+  <title>The Elements of Managed Democracy | Interactive Stratagem Table</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./atlas.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#chart-controls">Skip to chart controls</a>
+  <main class="atlas-app">
+    <h1 class="visually-hidden">The Elements of Managed Democracy: interactive Helldivers 2 periodic table</h1>
+    <div class="chart-viewport" id="chart-viewport" tabindex="0"
+      aria-label="Interactive periodic table. Swipe or scroll to explore. Select an element for its stats.">
+      <div class="chart" id="chart">
+        <img class="chart-art" id="chart-art" src="./assets/desk-mat-preview.png" alt="" draggable="false">
+        <div class="chart-hotspots" id="chart-hotspots" aria-label="Stratagem elements"></div>
+        <a class="arcade-link" href="./game.html" aria-label="Play Stratagem Hero">
+          <span class="arcade-kicker">SUPER DESTROYER / ARCADE</span>
+          <strong>STRATAGEM HERO <span aria-hidden="true">↗</span></strong>
+          <span class="arcade-detail">PUT YOUR CALL-INS TO THE TEST</span>
+        </a>
+      </div>
+    </div>
+    <div class="chart-controls" id="chart-controls">
+      <div class="chart-instruction"><span class="live-dot" aria-hidden="true"></span><strong>INTERACTIVE FIELD
+          TABLE</strong><span class="desktop-hint">SELECT AN ELEMENT TO VIEW STATS</span><span class="mobile-hint">SWIPE
+          TO EXPLORE · TAP AN ELEMENT</span></div>
+      <div class="control-actions">
+        <div class="search-wrap">
+          <label class="visually-hidden" for="atlas-search">Find a stratagem</label><span aria-hidden="true"
+            class="search-icon">⌕</span>
+          <input id="atlas-search" type="search" placeholder="FIND STRATAGEM" autocomplete="off"
+            aria-controls="search-results" aria-expanded="false">
+          <div id="search-results" class="search-results" role="group" aria-label="Search suggestions" hidden></div>
+        </div>
+        <div class="zoom-controls" role="group" aria-label="Chart zoom">
+          <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+          <button type="button" id="zoom-fit" aria-label="Fit whole table on screen">FIT</button>
+          <button type="button" id="zoom-readable" aria-label="Make table tiles readable">READ</button>
+          <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+        </div>
+        <a class="dock-game-link" href="./game.html">PLAY HERO <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </main>
+  <dialog id="stratagem-dialog" class="stratagem-dialog" aria-labelledby="detail-name">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close details">✕</button>
+    <div id="dialog-content"></div>
+  </dialog>
+  <script type="module" src="./js/home.js"></script>
+</body>
+
+</html>

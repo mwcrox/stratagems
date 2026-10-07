@@ -1,0 +1,1685 @@
+{
+  "eagle-strafing-run": {
+    "name": "Eagle Strafing Run",
+    "code": [
+      "↑",
+      "→",
+      "→"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "1,500 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-strafing-run"
+  },
+  "eagle-airstrike": {
+    "name": "Eagle Airstrike",
+    "code": [
+      "↑",
+      "→",
+      "↓",
+      "→"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-airstrike"
+  },
+  "eagle-cluster-bomb": {
+    "name": "Eagle Cluster Bomb",
+    "code": [
+      "↑",
+      "→",
+      "↓",
+      "↓",
+      "→"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-cluster-bomb"
+  },
+  "eagle-napalm-airstrike": {
+    "name": "Eagle Napalm Airstrike",
+    "code": [
+      "↑",
+      "→",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "5,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-napalm-airstrike"
+  },
+  "eagle-smoke-strike": {
+    "name": "Eagle Smoke Strike",
+    "code": [
+      "↑",
+      "→",
+      "↑",
+      "↓"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-smoke-strike"
+  },
+  "eagle-110mm-rocket-pods": {
+    "name": "Eagle 110mm Rocket Pods",
+    "code": [
+      "↑",
+      "→",
+      "↑",
+      "←"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "7,500 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-110mm-rocket-pods"
+  },
+  "eagle-500kg-bomb": {
+    "name": "Eagle 500kg Bomb",
+    "code": [
+      "↑",
+      "→",
+      "↓",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-500kg-bomb"
+  },
+  "eagle-gas-strike": {
+    "name": "Eagle Gas Airstrike",
+    "code": [
+      "↑",
+      "→",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 15,
+    "cost": "Gift",
+    "unlockedFrom": "Counterdissident Hammer Campaign",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-gas-airstrike"
+  },
+  "reinforce": {
+    "name": "Reinforce",
+    "code": [
+      "↑",
+      "↓",
+      "→",
+      "←",
+      "↑"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/reinforce"
+  },
+  "resupply": {
+    "name": "Resupply",
+    "code": [
+      "↓",
+      "↓",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/resupply"
+  },
+  "sos-beacon": {
+    "name": "SoS Beacon",
+    "code": [
+      "↑",
+      "↓",
+      "→",
+      "↑"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/sos-beacon"
+  },
+  "hellbomb": {
+    "name": "NUX-223 Hellbomb",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "↓",
+      "↑",
+      "→",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 30,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/nux-223-hellbomb"
+  },
+  "seaf-artillery": {
+    "name": "SEAF Artillery",
+    "code": [
+      "→",
+      "↑",
+      "↑",
+      "↓"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/seaf-artillery"
+  },
+  "eagle-rearm": {
+    "name": "Eagle Rearm",
+    "code": [
+      "↑",
+      "↑",
+      "←",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/eagle-rearm"
+  },
+  "prospecting-drill": {
+    "name": "Prospecting Drill",
+    "code": [
+      "↓",
+      "↓",
+      "←",
+      "→",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/prospecting-drill"
+  },
+  "seismic-probe": {
+    "name": "Seismic Probe",
+    "code": [
+      "↑",
+      "↑",
+      "←",
+      "→",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/seismic-probe"
+  },
+  "tectonic-drill": {
+    "name": "Tectonic Drill",
+    "code": [
+      "↑",
+      "↓",
+      "↑",
+      "↓",
+      "↑",
+      "↓"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/tectonic-drill"
+  },
+  "hive-breaker-drill": {
+    "name": "Hive Breaker Drill",
+    "code": [
+      "←",
+      "↑",
+      "↓",
+      "→",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/hive-breaker-drill"
+  },
+  "dark-fluid-vessel": {
+    "name": "Dark Fluid Vessel",
+    "code": [
+      "↑",
+      "←",
+      "→",
+      "↓",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/dark-fluid-vessel"
+  },
+  "super-earth-flag": {
+    "name": "Super Earth Flag",
+    "code": [
+      "↓",
+      "↑",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/super-earth-flag"
+  },
+  "upload-data": {
+    "name": "Upload Data",
+    "code": [
+      "←",
+      "→",
+      "↑",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/upload-data"
+  },
+  "cargo-container": {
+    "name": "Cargo Container",
+    "code": [
+      "↑",
+      "↑",
+      "↓",
+      "↓",
+      "→",
+      "↓"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/cargo-container"
+  },
+  "call-in-super-destroyer": {
+    "name": "Call In Super Destroyer",
+    "code": [
+      "↑",
+      "↑",
+      "↓",
+      "↓",
+      "←",
+      "→",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 0,
+    "cost": "Free",
+    "sourceUrl": "https://divershub.app/database/stratagems/call-in-super-destroyer"
+  },
+  "orbital-illumination-flare": {
+    "name": "Orbital Illumination Flare",
+    "code": [
+      "→",
+      "→",
+      "←",
+      "←"
+    ],
+    "cooldownSeconds": null,
+    "cost": "N/A",
+    "availability": "Deprecated; removed from Stratagem Hero in patch 1.001.100",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/Orbital_Illumination_Flare"
+  },
+  "patriot-exosuit": {
+    "name": "EXO-45 Patriot Exosuit",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "↑",
+      "←",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 600,
+    "cost": "20,000 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/exo-45-patriot-exosuit"
+  },
+  "emancipator-exosuit": {
+    "name": "EXO-49 Emancipator Exosuit",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "↑",
+      "←",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 600,
+    "cost": "20,000 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/exo-49-emancipator-exosuit"
+  },
+  "lumberer-exosuit": {
+    "name": "EXO-51 Lumberer Exosuit",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "↑",
+      "→",
+      "←",
+      "↑"
+    ],
+    "cooldownSeconds": 420,
+    "cost": "50 Medals",
+    "unlockedFrom": "Exo Experts Premium Warbond",
+    "sourceUrl": "https://divershub.app/database/stratagems/exo-51-lumberer-exosuit"
+  },
+  "breakthrough-exosuit": {
+    "name": "EXO-55 Breakthrough Exosuit",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "←",
+      "→",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 420,
+    "cost": "50 Medals",
+    "unlockedFrom": "Exo Experts Premium Warbond",
+    "sourceUrl": "https://divershub.app/database/stratagems/exo-55-breakthrough-exosuit"
+  },
+  "fast-recon-vehicle": {
+    "name": "M-102 Fast Recon Vehicle",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "↓",
+      "→",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "25,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/m-102-fast-recon-vehicle"
+  },
+  "supply-frv": {
+    "name": "M-103 Supply FRV",
+    "code": [
+      "←",
+      "↓",
+      "←",
+      "←",
+      "↓",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "Free",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/m-103-supply-frv"
+  },
+  "incinerator-frv": {
+    "name": "M-104 Incinerator FRV",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "←",
+      "↓",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "Free",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/m-104-incinerator-frv"
+  },
+  "td-110-maelstrom": {
+    "name": "TD-110 Maelstrom",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "↓",
+      "←",
+      "↓",
+      "↑",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 780,
+    "cost": "Gift",
+    "unlockedFrom": "Armored Eagle Campaign",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/TD-110_Maelstrom"
+  },
+  "bastion-mk-xvi": {
+    "name": "TD-220 Bastion MK XVI",
+    "code": [
+      "←",
+      "↓",
+      "→",
+      "↓",
+      "←",
+      "↓",
+      "↑",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 780,
+    "cost": "35,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/td-220-bastion-mk-xvi"
+  },
+  "hmg-emplacement": {
+    "name": "E/MG-101 HMG Emplacement",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "→",
+      "→",
+      "←"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/e-mg-101-hmg-emplacement"
+  },
+  "shield-generator-relay": {
+    "name": "FX-12 Shield Generator Relay",
+    "code": [
+      "↓",
+      "↓",
+      "←",
+      "→",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 90,
+    "cost": "9,000 Requisition Slips",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/fx-12-shield-generator-relay"
+  },
+  "anti-tank-emplacement": {
+    "name": "E/AT-12 Anti-Tank Emplacement",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "→",
+      "→",
+      "→"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Urban Legends\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/e-at-12-anti-tank-emplacement"
+  },
+  "grenadier-battlement": {
+    "name": "E/GL-21 Grenadier Battlement",
+    "code": [
+      "↓",
+      "→",
+      "↓",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 120,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/e-gl-21-grenadier-battlement"
+  },
+  "anti-personnel-minefield": {
+    "name": "MD-6 Anti-Personnel Minefield",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 120,
+    "cost": "1,500 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/md-6-anti-personnel-minefield"
+  },
+  "incendiary-mines": {
+    "name": "MD-I4 Incendiary Mines",
+    "code": [
+      "↓",
+      "←",
+      "←",
+      "↓"
+    ],
+    "cooldownSeconds": 120,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/md-i4-incendiary-mines"
+  },
+  "anti-tank-mines": {
+    "name": "MD-17 Anti-Tank Mines",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 120,
+    "cost": "7,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/md-17-anti-tank-mines"
+  },
+  "gas-mine": {
+    "name": "MD-8 Gas Mines",
+    "code": [
+      "↓",
+      "←",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 120,
+    "cost": "120 Medals",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/md-8-gas-mines"
+  },
+  "machine-gun": {
+    "name": "MG-43 Machine Gun",
+    "code": [
+      "↓",
+      "←",
+      "↓",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "Free",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/mg-43-machine-gun",
+    "damage": "Ballistic 90",
+    "capacity": "175",
+    "fireRate": "630 RPM",
+    "dps": "945",
+    "armorPenetration": "Medium"
+  },
+  "anti-materiel-rifle": {
+    "name": "APW-1 Anti-Materiel Rifle",
+    "code": [
+      "↓",
+      "←",
+      "→",
+      "↑",
+      "↓"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "5,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/apw-1-anti-materiel-rifle",
+    "damage": "Ballistic 450",
+    "capacity": "7",
+    "fireRate": "400 RPM",
+    "dps": "3 000",
+    "armorPenetration": "Heavy"
+  },
+  "stalwart": {
+    "name": "M-105 Stalwart",
+    "code": [
+      "↓",
+      "←",
+      "↓",
+      "↑",
+      "↑",
+      "←"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "3,500 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/m-105-stalwart",
+    "damage": "Ballistic 90",
+    "capacity": "250",
+    "fireRate": "700 RPM",
+    "dps": "1 050",
+    "armorPenetration": "Light"
+  },
+  "expendable-anti-tank": {
+    "name": "EAT-17 Expendable Anti-Tank",
+    "code": [
+      "↓",
+      "↓",
+      "←",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 70,
+    "cost": "3,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/eat-17-expendable-anti-tank",
+    "damage": "Ballistic 2 000 • Explosion 150",
+    "capacity": "1",
+    "fireRate": "600 RPM",
+    "armorPenetration": "Tank II"
+  },
+  "recoilless-rifle": {
+    "name": "GR-8 Recoilless Rifle",
+    "code": [
+      "↓",
+      "←",
+      "→",
+      "→",
+      "←"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/gr-8-recoilless-rifle",
+    "capacity": "1",
+    "fireRate": "600 RPM"
+  },
+  "flamethrower": {
+    "name": "FLAM-40 Flamethrower",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/flam-40-flamethrower",
+    "damage": "Fire 150",
+    "capacity": "150",
+    "armorPenetration": "Heavy"
+  },
+  "autocannon": {
+    "name": "AC-8 Autocannon",
+    "code": [
+      "↓",
+      "←",
+      "↓",
+      "↑",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "7,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/ac-8-autocannon",
+    "damage": "Ballistic 325 • Explosion 150 • Ballistic 110",
+    "capacity": "10",
+    "fireRate": "190 RPM",
+    "dps": "1 504",
+    "armorPenetration": "Heavy"
+  },
+  "heavy-machine-gun": {
+    "name": "MG-206 Heavy Machine Gun",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/mg-206-heavy-machine-gun",
+    "damage": "Ballistic 150",
+    "capacity": "100",
+    "fireRate": "450 RPM",
+    "dps": "1 125",
+    "armorPenetration": "Heavy"
+  },
+  "airburst-rocket-launcher": {
+    "name": "RL-77 Airburst Rocket Launcher",
+    "code": [
+      "↓",
+      "↑",
+      "↑",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "8,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/rl-77-airburst-rocket-launcher",
+    "damage": "Ballistic 350 • Explosion 150 • Ballistic 150 • Explosion 500",
+    "capacity": "1",
+    "fireRate": "16 RPM",
+    "armorPenetration": "Medium"
+  },
+  "commando": {
+    "name": "MLS-4X Commando",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "↓",
+      "→"
+    ],
+    "cooldownSeconds": 120,
+    "cost": "8,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/mls-4x-commando",
+    "damage": "Ballistic 1 100 • Explosion 150",
+    "capacity": "4",
+    "fireRate": "240 RPM",
+    "armorPenetration": "Tank II"
+  },
+  "railgun": {
+    "name": "RS-422 Railgun",
+    "code": [
+      "↓",
+      "→",
+      "↓",
+      "↑",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/rs-422-railgun",
+    "damage": "Ballistic 600",
+    "capacity": "1",
+    "fireRate": "34 RPM",
+    "armorPenetration": "Tank I"
+  },
+  "spear": {
+    "name": "FAF-14 Spear",
+    "code": [
+      "↓",
+      "↓",
+      "↑",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "9,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/faf-14-spear",
+    "damage": "Ballistic 4 000 • Explosion 200",
+    "capacity": "1",
+    "fireRate": "240 RPM",
+    "armorPenetration": "Tank III"
+  },
+  "sta-x3-w-a-s-p-launcher": {
+    "name": "StA-X3 W.A.S.P. Launcher",
+    "code": [
+      "↓",
+      "↓",
+      "↑",
+      "↓",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "12,000 Requisition Slips",
+    "unlockedFrom": "Patriotic Administration Center",
+    "sourceUrl": "https://divershub.app/database/stratagems/sta-x3-w-a-s-p-launcher",
+    "damage": "Ballistic 200 • Explosion 600",
+    "capacity": "7",
+    "fireRate": "500 RPM",
+    "dps": "6 666.6",
+    "armorPenetration": "Tank II"
+  },
+  "grenade-launcher": {
+    "name": "GL-21 Grenade Launcher",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "←",
+      "↓"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/gl-21-grenade-launcher",
+    "damage": "Explosion 400",
+    "capacity": "10",
+    "fireRate": "160 RPM",
+    "dps": "1 066",
+    "armorPenetration": "Heavy"
+  },
+  "laser-cannon": {
+    "name": "LAS-98 Laser Cannon",
+    "code": [
+      "↓",
+      "←",
+      "↓",
+      "↑",
+      "←"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/las-98-laser-cannon",
+    "damage": "Laser 350 • Fire 100",
+    "armorPenetration": "Heavy"
+  },
+  "arc-thrower": {
+    "name": "ARC-3 Arc Thrower",
+    "code": [
+      "↓",
+      "→",
+      "↓",
+      "↑",
+      "←",
+      "←"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "7,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/arc-3-arc-thrower",
+    "damage": "Arc 250",
+    "fireRate": "60 RPM",
+    "dps": "250",
+    "armorPenetration": "Tank III"
+  },
+  "quasar-cannon": {
+    "name": "LAS-99 Quasar Cannon",
+    "code": [
+      "↓",
+      "↓",
+      "↑",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "7,500 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/las-99-quasar-cannon",
+    "damage": "Ballistic 2 000 • Explosion 150",
+    "fireRate": "3 RPM",
+    "armorPenetration": "Tank II"
+  },
+  "sterilizer": {
+    "name": "TX-41 Sterilizer",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "↓",
+      "←"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Chemical Agents\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/tx-41-sterilizer",
+    "damage": "Gas 30",
+    "capacity": "100",
+    "dps": "30",
+    "armorPenetration": "Tank I"
+  },
+  "gl-52-de-escalator": {
+    "name": "GL-52 De-Escalator",
+    "code": [
+      "↓",
+      "→",
+      "↑",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \" Force of Law\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/gl-52-de-escalator",
+    "damage": "Arc 100",
+    "capacity": "6",
+    "fireRate": "160 RPM",
+    "armorPenetration": "Heavy"
+  },
+  "one-true-flag": {
+    "name": "CQC-1 One True Flag",
+    "code": [
+      "↓",
+      "←",
+      "→",
+      "→",
+      "↑"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Masters of Ceremony\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/cqc-1-one-true-flag",
+    "damage": "Melee 200",
+    "fireRate": "117 RPM"
+  },
+  "epoch": {
+    "name": "PLAS-45 Epoch",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "75 Medals",
+    "unlockedFrom": "Warbond \"Control Group\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/plas-45-epoch",
+    "damage": "Ballistic 400 • Explosion 500",
+    "capacity": "3",
+    "fireRate": "600 RPM",
+    "dps": "1 600",
+    "armorPenetration": "Tank I"
+  },
+  "expendable-napalm": {
+    "name": "EAT-700 Expendable Napalm",
+    "code": [
+      "↓",
+      "↓",
+      "←",
+      "↑",
+      "←"
+    ],
+    "cooldownSeconds": 140,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Dust Devils\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/eat-700-expendable-napalm",
+    "capacity": "1",
+    "fireRate": "600 RPM",
+    "armorPenetration": "Tank II"
+  },
+  "speargun": {
+    "name": "S-11 Speargun",
+    "code": [
+      "↓",
+      "→",
+      "↓",
+      "←",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Dust Devils\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/s-11-speargun",
+    "capacity": "1",
+    "fireRate": "60 RPM"
+  },
+  "solo-silo": {
+    "name": "MS-11 Solo Silo",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Dust Devils\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/ms-11-solo-silo",
+    "damage": "Explosion 2 500 • Explosion 1 500",
+    "armorPenetration": "Tank V"
+  },
+  "maxigun": {
+    "name": "M-1000 Maxigun",
+    "code": [
+      "↓",
+      "←",
+      "→",
+      "↓",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Python Commandos\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/m-1000-maxigun",
+    "damage": "Ballistic 80",
+    "capacity": "1 000",
+    "fireRate": "1 500 RPM",
+    "dps": "2 000",
+    "armorPenetration": "Medium"
+  },
+  "defoliation-tool": {
+    "name": "CQC-9 Defoliation Tool",
+    "code": [
+      "↓",
+      "←",
+      "→",
+      "→",
+      "↓"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Python Commandos\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/cqc-9-defoliation-tool",
+    "damage": "Melee 450",
+    "dps": "450",
+    "armorPenetration": "Tank I"
+  },
+  "c4-pack": {
+    "name": "B/MD C4 Pack",
+    "code": [
+      "↓",
+      "→",
+      "↑",
+      "↑",
+      "→",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \" Redacted Regiment\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/b-md-c4-pack",
+    "damage": "Explosion 2 000",
+    "capacity": "1",
+    "armorPenetration": "Tank III"
+  },
+  "gl-28": {
+    "name": "GL-28 Belt-Fed Grenade Launcher",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "←",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Siege Breakers\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/gl-28-belt-fed-grenade-launcher",
+    "damage": "Explosion 150",
+    "capacity": "100",
+    "fireRate": "160 RPM",
+    "dps": "400",
+    "armorPenetration": "Heavy"
+  },
+  "eat-411": {
+    "name": "EAT-411 Leveller",
+    "code": [
+      "↓",
+      "↓",
+      "←",
+      "↑",
+      "↓"
+    ],
+    "cooldownSeconds": 140,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Siege Breakers\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/eat-411-leveller",
+    "damage": "Ballistic 1 000 • Explosion 2 500",
+    "capacity": "1",
+    "fireRate": "600 RPM",
+    "armorPenetration": "Tank II"
+  },
+  "cqc-20": {
+    "name": "CQC-20 Breaching Hammer",
+    "code": [
+      "↓",
+      "←",
+      "→",
+      "←",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "75 Medals",
+    "unlockedFrom": "Warbond \"Siege Breakers\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/cqc-20-breaching-hammer",
+    "damage": "Melee 300 • Explosion 2 100",
+    "capacity": "1",
+    "armorPenetration": "Medium"
+  },
+  "cremator": {
+    "name": "B/FLAM-80 Cremator",
+    "code": [
+      "↓",
+      "↓",
+      "→",
+      "↓",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Entrenched Division\"",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/B/FLAM-80_Cremator",
+    "damage": "225 DPS fire",
+    "capacity": "500",
+    "dps": "225",
+    "callInSeconds": 7.75,
+    "uses": "Unlimited",
+    "armorPenetration": "Heavy"
+  },
+  "bullet-storm": {
+    "name": "MGX-42 Bullet Storm",
+    "code": [
+      "↓",
+      "←",
+      "↓",
+      "→",
+      "↑",
+      "←"
+    ],
+    "cooldownSeconds": 70,
+    "cost": "75 Medals",
+    "unlockedFrom": "Exo Experts Premium Warbond",
+    "sourceUrl": "https://divershub.app/database/stratagems/mgx-42-bullet-storm",
+    "damage": "Ballistic 100",
+    "capacity": "300",
+    "fireRate": "1 300 RPM",
+    "armorPenetration": "Light"
+  },
+  "40-k-meltagun": {
+    "name": "40-K Meltagun",
+    "code": [
+      "↓",
+      "←",
+      "↑",
+      "←",
+      "←",
+      "↓"
+    ],
+    "cooldownSeconds": 410,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Castellan’s Creed\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/40-k-meltagun",
+    "damage": "Laser 2 600",
+    "capacity": "3",
+    "fireRate": "50 RPM",
+    "armorPenetration": "Tank III"
+  },
+  "machine-gun-sentry": {
+    "name": "A/MG-43 Machine Gun Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "→",
+      "↑"
+    ],
+    "cooldownSeconds": 90,
+    "cost": "1,500 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-mg-43-machine-gun-sentry"
+  },
+  "gatling-sentry": {
+    "name": "A/G-16 Gatling Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "←"
+    ],
+    "cooldownSeconds": 150,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-g-16-gatling-sentry"
+  },
+  "mortar-sentry": {
+    "name": "A/M-12 Mortar Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "→",
+      "↓"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "7,000 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-m-12-mortar-sentry"
+  },
+  "autocannon-sentry": {
+    "name": "A/AC-8 Autocannon Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "↑",
+      "←",
+      "↑"
+    ],
+    "cooldownSeconds": 150,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-ac-8-autocannon-sentry"
+  },
+  "rocket-sentry": {
+    "name": "A/MLS-4X Rocket Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "→",
+      "←"
+    ],
+    "cooldownSeconds": 150,
+    "cost": "7,500 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-mls-4x-rocket-sentry"
+  },
+  "ems-mortar-sentry": {
+    "name": "A/M-23 EMS Mortar Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "↓",
+      "→"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "8,000 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-m-23-ems-mortar-sentry"
+  },
+  "tesla-tower": {
+    "name": "A/ARC-3 Tesla Tower",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "↑",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 120,
+    "cost": "8,000 Requisition Slips",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-arc-3-tesla-tower"
+  },
+  "flame-sentry": {
+    "name": "A/FLAM-40 Flame Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "↓",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 100,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Urban Legends\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-flam-40-flame-sentry"
+  },
+  "laser-sentry": {
+    "name": "A/LAS-98 Laser Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "↓",
+      "↑",
+      "→"
+    ],
+    "cooldownSeconds": 150,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Control Group\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-las-98-laser-sentry"
+  },
+  "gas-mortar-sentry": {
+    "name": "A/GM-17 Gas Mortar Sentry",
+    "code": [
+      "↓",
+      "↑",
+      "→",
+      "↓",
+      "←"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "85 Medals",
+    "unlockedFrom": "Warbond \"Entrenched Division\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/a-gm-17-gas-mortar-sentry"
+  },
+  "orbital-precision-strike": {
+    "name": "Orbital Precision Strike",
+    "code": [
+      "→",
+      "→",
+      "↑"
+    ],
+    "cooldownSeconds": 90,
+    "cost": "Free",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-precision-strike"
+  },
+  "orbital-gatling-barrage": {
+    "name": "Orbital Gatling Barrage",
+    "code": [
+      "→",
+      "↓",
+      "←",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 70,
+    "cost": "1,500 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-gatling-barrage"
+  },
+  "orbital-airburst-strike": {
+    "name": "Orbital Airburst Strike",
+    "code": [
+      "→",
+      "→",
+      "→"
+    ],
+    "cooldownSeconds": 100,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-airburst-strike"
+  },
+  "orbital-120mm-he-barrage": {
+    "name": "Orbital 120mm HE Barrage",
+    "code": [
+      "→",
+      "→",
+      "↓",
+      "←",
+      "→",
+      "↓"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-120mm-he-barrage"
+  },
+  "orbital-380mm-he-barrage": {
+    "name": "Orbital 380mm HE Barrage",
+    "code": [
+      "→",
+      "↓",
+      "↑",
+      "↑",
+      "←",
+      "↓",
+      "↓"
+    ],
+    "cooldownSeconds": 240,
+    "cost": "7,500 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-380mm-he-barrage"
+  },
+  "orbital-walking-barrage": {
+    "name": "Orbital Walking Barrage",
+    "code": [
+      "→",
+      "↓",
+      "→",
+      "↓",
+      "→",
+      "↓"
+    ],
+    "cooldownSeconds": 240,
+    "cost": "7,500 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-walking-barrage"
+  },
+  "orbital-laser": {
+    "name": "Orbital Laser",
+    "code": [
+      "→",
+      "↓",
+      "↑",
+      "→",
+      "↓"
+    ],
+    "cooldownSeconds": 300,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-laser"
+  },
+  "orbital-napalm-barrage": {
+    "name": "Orbital Napalm Barrage",
+    "code": [
+      "→",
+      "→",
+      "↓",
+      "←",
+      "→",
+      "↑"
+    ],
+    "cooldownSeconds": 240,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-napalm-barrage"
+  },
+  "orbital-railcannon-strike": {
+    "name": "Orbital Railcannon Strike",
+    "code": [
+      "→",
+      "↑",
+      "↓",
+      "↓",
+      "→"
+    ],
+    "cooldownSeconds": 180,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Orbital Cannons",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-railcannon-strike"
+  },
+  "orbital-gas-strike": {
+    "name": "Orbital Gas Strike",
+    "code": [
+      "→",
+      "→",
+      "↓",
+      "→"
+    ],
+    "cooldownSeconds": 75,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-gas-strike"
+  },
+  "orbital-ems-strike": {
+    "name": "Orbital EMS Strike",
+    "code": [
+      "→",
+      "→",
+      "←",
+      "↓"
+    ],
+    "cooldownSeconds": 75,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-ems-strike"
+  },
+  "orbital-smoke-strike": {
+    "name": "Orbital Smoke Strike",
+    "code": [
+      "→",
+      "→",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 75,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Bridge",
+    "sourceUrl": "https://divershub.app/database/stratagems/orbital-smoke-strike"
+  },
+  "jump-pack": {
+    "name": "LIFT-850 Jump Pack",
+    "code": [
+      "↓",
+      "↑",
+      "↑",
+      "↓",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Hangar",
+    "sourceUrl": "https://divershub.app/database/stratagems/lift-850-jump-pack"
+  },
+  "supply-pack": {
+    "name": "B-1 Supply Pack",
+    "code": [
+      "↓",
+      "←",
+      "↓",
+      "↑",
+      "↑",
+      "↓"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "4,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/b-1-supply-pack"
+  },
+  "guard-dog": {
+    "name": "AX/AR-23 Guard Dog",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "↑",
+      "→",
+      "↓"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "7,500 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/ax-ar-23-guard-dog"
+  },
+  "guard-dog-rover": {
+    "name": "AX/LAS-5 Rover",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "↑",
+      "→",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "7,500 Requisition Slips",
+    "unlockedFrom": "Robotics Workshop",
+    "sourceUrl": "https://divershub.app/database/stratagems/ax-las-5-rover"
+  },
+  "guard-dog-breath": {
+    "name": "AX/TX-13 Dog Breath",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "↑",
+      "→",
+      "↑"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Chemical Agents\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/ax-tx-13-dog-breath"
+  },
+  "guard-dog-k-9": {
+    "name": "AX/ARC-3 K-9",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "↑",
+      "→",
+      "←"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \" Force of Law\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/ax-arc-3-k-9"
+  },
+  "guard-dog-hot-dog": {
+    "name": "AX/FLAM-75 Hot Dog",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "↑",
+      "←",
+      "←"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "75 Medals",
+    "unlockedFrom": "Warbond \"Python Commandos\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/ax-flam-75-hot-dog"
+  },
+  "ballistic-shield-backpack": {
+    "name": "SH-20 Ballistic Shield Backpack",
+    "code": [
+      "↓",
+      "←",
+      "↓",
+      "↓",
+      "↑",
+      "←"
+    ],
+    "cooldownSeconds": 240,
+    "cost": "6,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/sh-20-ballistic-shield-backpack"
+  },
+  "shield-generator-pack": {
+    "name": "SH-32 Shield Generator Pack",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "→",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "10,000 Requisition Slips",
+    "unlockedFrom": "Engineering Bay",
+    "sourceUrl": "https://divershub.app/database/stratagems/sh-32-shield-generator-pack"
+  },
+  "directional-shield": {
+    "name": "SH-51 Directional Shield",
+    "code": [
+      "↓",
+      "↑",
+      "←",
+      "→",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 300,
+    "cost": "75 Medals",
+    "unlockedFrom": "Warbond \"Urban Legends\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/sh-51-directional-shield"
+  },
+  "hover-pack": {
+    "name": "LIFT-860 Hover Pack",
+    "code": [
+      "↓",
+      "↑",
+      "↑",
+      "↓",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Borderline Justice\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/lift-860-hover-pack"
+  },
+  "warp-pack": {
+    "name": "LIFT-182 Warp Pack",
+    "code": [
+      "↓",
+      "←",
+      "→",
+      "↓",
+      "←",
+      "→"
+    ],
+    "cooldownSeconds": 480,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Control Group\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/lift-182-warp-pack"
+  },
+  "hellbomb-portable": {
+    "name": "B-100 Portable Hellbomb",
+    "code": [
+      "↓",
+      "→",
+      "↑",
+      "↑",
+      "↑"
+    ],
+    "cooldownSeconds": 300,
+    "cost": "110 Medals",
+    "unlockedFrom": "Warbond \"Servants of Freedom\"",
+    "sourceUrl": "https://divershub.app/database/stratagems/b-100-portable-hellbomb"
+  }
+}

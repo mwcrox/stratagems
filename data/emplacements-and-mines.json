@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hmg-emplacement",
+    "number": 64,
+    "name": "HMG Emplacement",
+    "icon": "hmg-emplacement.svg"
+  },
+  {
+    "id": "shield-generator-relay",
+    "number": 65,
+    "name": "Shield Generator Relay",
+    "icon": "shield-generator-relay.svg"
+  },
+  {
+    "id": "anti-tank-emplacement",
+    "number": 66,
+    "name": "Anti-Tank Emplacement",
+    "icon": "anti-tank-emplacement.svg"
+  },
+  {
+    "id": "grenadier-battlement",
+    "number": 67,
+    "name": "Grenadier Battlement",
+    "icon": "grenadier-battlement.svg"
+  },
+  {
+    "id": "anti-personnel-minefield",
+    "number": 68,
+    "name": "Anti-Personnel Minefield",
+    "icon": "anti-personnel-minefield.svg"
+  },
+  {
+    "id": "incendiary-mines",
+    "number": 69,
+    "name": "Incendiary Mines",
+    "icon": "incendiary-mines.svg"
+  },
+  {
+    "id": "anti-tank-mines",
+    "number": 70,
+    "name": "Anti-Tank Mines",
+    "icon": "anti-tank-mines.svg"
+  },
+  {
+    "id": "gas-mine",
+    "number": 71,
+    "name": "Gas Mine",
+    "icon": "gas-mine.svg"
+  }
+]

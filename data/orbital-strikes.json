@@ -1,0 +1,74 @@
+[
+  {
+    "id": "orbital-precision-strike",
+    "number": 34,
+    "name": "Orbital Precision Strike",
+    "icon": "orbital-precision-strike.svg"
+  },
+  {
+    "id": "orbital-gatling-barrage",
+    "number": 35,
+    "name": "Orbital Gatling Barrage",
+    "icon": "orbital-gatling-barrage.svg"
+  },
+  {
+    "id": "orbital-airburst-strike",
+    "number": 36,
+    "name": "Orbital Airburst Strike",
+    "icon": "orbital-airburst-strike.svg"
+  },
+  {
+    "id": "orbital-120mm-he-barrage",
+    "number": 37,
+    "name": "Orbital 120MM HE Barrage",
+    "icon": "orbital-120mm-he-barrage.svg"
+  },
+  {
+    "id": "orbital-380mm-he-barrage",
+    "number": 38,
+    "name": "Orbital 380MM HE Barrage",
+    "icon": "orbital-380mm-he-barrage.svg"
+  },
+  {
+    "id": "orbital-walking-barrage",
+    "number": 39,
+    "name": "Orbital Walking Barrage",
+    "icon": "orbital-walking-barrage.svg"
+  },
+  {
+    "id": "orbital-laser",
+    "number": 40,
+    "name": "Orbital Laser",
+    "icon": "orbital-laser.svg"
+  },
+  {
+    "id": "orbital-napalm-barrage",
+    "number": 41,
+    "name": "Orbital Napalm Barrage",
+    "icon": "orbital-napalm-barrage.svg"
+  },
+  {
+    "id": "orbital-railcannon-strike",
+    "number": 42,
+    "name": "Orbital Railcannon Strike",
+    "icon": "orbital-railcannon-strike.svg"
+  },
+  {
+    "id": "orbital-gas-strike",
+    "number": 43,
+    "name": "Orbital Gas Strike",
+    "icon": "orbital-gas-strike.svg"
+  },
+  {
+    "id": "orbital-ems-strike",
+    "number": 44,
+    "name": "Orbital EMS Strike",
+    "icon": "orbital-ems-strike.svg"
+  },
+  {
+    "id": "orbital-smoke-strike",
+    "number": 45,
+    "name": "Orbital Smoke Strike",
+    "icon": "orbital-smoke-strike.svg"
+  }
+]

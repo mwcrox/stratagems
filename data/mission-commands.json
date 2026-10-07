@@ -1,0 +1,98 @@
+[
+  {
+    "id": "reinforce",
+    "number": 94,
+    "name": "Reinforce",
+    "icon": "reinforce.svg"
+  },
+  {
+    "id": "resupply",
+    "number": 95,
+    "name": "Resupply",
+    "icon": "resupply.svg"
+  },
+  {
+    "id": "sos-beacon",
+    "number": 96,
+    "name": "SOS Beacon",
+    "icon": "sos-beacon.svg"
+  },
+  {
+    "id": "hellbomb",
+    "number": 97,
+    "name": "Hellbomb",
+    "icon": "hellbomb.svg"
+  },
+  {
+    "id": "seaf-artillery",
+    "number": 98,
+    "name": "SEAF Artillery",
+    "icon": "seaf-artillery.svg"
+  },
+  {
+    "id": "eagle-rearm",
+    "number": 99,
+    "name": "Eagle Rearm",
+    "icon": "eagle-rearm.svg"
+  },
+  {
+    "id": "prospecting-drill",
+    "number": 100,
+    "name": "Prospecting Drill",
+    "icon": "prospecting-drill.svg"
+  },
+  {
+    "id": "seismic-probe",
+    "number": 101,
+    "name": "Seismic Probe",
+    "icon": "seismic-probe.svg"
+  },
+  {
+    "id": "tectonic-drill",
+    "number": 102,
+    "name": "Tectonic Drill",
+    "icon": "tectonic-drill.svg"
+  },
+  {
+    "id": "hive-breaker-drill",
+    "number": 103,
+    "name": "Hive Breaker Drill",
+    "icon": "hive-breaker-drill.svg"
+  },
+  {
+    "id": "dark-fluid-vessel",
+    "number": 104,
+    "name": "Dark Fluid Vessel",
+    "icon": "dark-fluid-vessel.svg"
+  },
+  {
+    "id": "super-earth-flag",
+    "number": 105,
+    "name": "Super Earth Flag",
+    "icon": "super-earth-flag.svg"
+  },
+  {
+    "id": "upload-data",
+    "number": 106,
+    "name": "Upload Data",
+    "icon": "upload-data.svg"
+  },
+  {
+    "id": "cargo-container",
+    "number": 107,
+    "name": "Cargo Container",
+    "icon": "cargo-container.svg"
+  },
+  {
+    "id": "call-in-super-destroyer",
+    "number": 108,
+    "name": "Call In Super Destroyer",
+    "icon": "call-in-super-destroyer.svg"
+  },
+  {
+    "id": "orbital-illumination-flare",
+    "number": 109,
+    "name": "Orbital Illumination Flare",
+    "icon": "orbital-illumination-flare.svg"
+  }
+]

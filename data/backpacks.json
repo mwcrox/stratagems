@@ -1,0 +1,80 @@
+[
+  {
+    "id": "jump-pack",
+    "number": 72,
+    "name": "Jump Pack",
+    "icon": "jump-pack.svg"
+  },
+  {
+    "id": "supply-pack",
+    "number": 73,
+    "name": "Supply Pack",
+    "icon": "supply-pack.svg"
+  },
+  {
+    "id": "guard-dog",
+    "number": 74,
+    "name": "Guard Dog",
+    "icon": "guard-dog.svg"
+  },
+  {
+    "id": "guard-dog-rover",
+    "number": 75,
+    "name": "Guard Dog Rover",
+    "icon": "guard-dog-rover.svg"
+  },
+  {
+    "id": "guard-dog-breath",
+    "number": 76,
+    "name": "Guard Dog Breath",
+    "icon": "guard-dog-breath.svg"
+  },
+  {
+    "id": "guard-dog-k-9",
+    "number": 77,
+    "name": "Guard Dog K-9",
+    "icon": "guard-dog-k-9.svg"
+  },
+  {
+    "id": "guard-dog-hot-dog",
+    "number": 78,
+    "name": "Guard Dog Hot Dog",
+    "icon": "guard-dog-hot-dog.svg"
+  },
+  {
+    "id": "ballistic-shield-backpack",
+    "number": 79,
+    "name": "Ballistic Shield Backpack",
+    "icon": "ballistic-shield-backpack.svg"
+  },
+  {
+    "id": "shield-generator-pack",
+    "number": 80,
+    "name": "Shield Generator Pack",
+    "icon": "shield-generator-pack.svg"
+  },
+  {
+    "id": "directional-shield",
+    "number": 81,
+    "name": "Directional Shield",
+    "icon": "directional-shield.svg"
+  },
+  {
+    "id": "hover-pack",
+    "number": 82,
+    "name": "Hover Pack",
+    "icon": "hover-pack.svg"
+  },
+  {
+    "id": "warp-pack",
+    "number": 83,
+    "name": "Warp Pack",
+    "icon": "warp-pack.svg"
+  },
+  {
+    "id": "hellbomb-portable",
+    "number": 84,
+    "name": "Hellbomb Portable",
+    "icon": "hellbomb-portable.svg"
+  }
+]

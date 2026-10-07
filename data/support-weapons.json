@@ -1,0 +1,200 @@
+[
+  {
+    "id": "machine-gun",
+    "number": 1,
+    "name": "Machine Gun",
+    "icon": "machine-gun.svg"
+  },
+  {
+    "id": "anti-materiel-rifle",
+    "number": 2,
+    "name": "Anti-Materiel Rifle",
+    "icon": "anti-materiel-rifle.svg"
+  },
+  {
+    "id": "stalwart",
+    "number": 3,
+    "name": "Stalwart",
+    "icon": "stalwart.svg"
+  },
+  {
+    "id": "expendable-anti-tank",
+    "number": 4,
+    "name": "Expendable Anti-Tank",
+    "icon": "expendable-anti-tank.svg"
+  },
+  {
+    "id": "recoilless-rifle",
+    "number": 5,
+    "name": "Recoilless Rifle",
+    "icon": "recoilless-rifle.svg"
+  },
+  {
+    "id": "flamethrower",
+    "number": 6,
+    "name": "Flamethrower",
+    "icon": "flamethrower.svg"
+  },
+  {
+    "id": "autocannon",
+    "number": 7,
+    "name": "Autocannon",
+    "icon": "autocannon.svg"
+  },
+  {
+    "id": "heavy-machine-gun",
+    "number": 8,
+    "name": "Heavy Machine Gun",
+    "icon": "heavy-machine-gun.svg"
+  },
+  {
+    "id": "airburst-rocket-launcher",
+    "number": 9,
+    "name": "Airburst Rocket Launcher",
+    "icon": "airburst-rocket-launcher.svg"
+  },
+  {
+    "id": "commando",
+    "number": 10,
+    "name": "Commando",
+    "icon": "commando.svg"
+  },
+  {
+    "id": "railgun",
+    "number": 11,
+    "name": "Railgun",
+    "icon": "railgun.svg"
+  },
+  {
+    "id": "spear",
+    "number": 12,
+    "name": "Spear",
+    "icon": "spear.svg"
+  },
+  {
+    "id": "sta-x3-w-a-s-p-launcher",
+    "number": 13,
+    "name": "StA-X3 W.A.S.P. Launcher",
+    "icon": "sta-x3-w-a-s-p-launcher.svg"
+  },
+  {
+    "id": "grenade-launcher",
+    "number": 14,
+    "name": "Grenade Launcher",
+    "icon": "grenade-launcher.svg"
+  },
+  {
+    "id": "laser-cannon",
+    "number": 15,
+    "name": "Laser Cannon",
+    "icon": "laser-cannon.svg"
+  },
+  {
+    "id": "arc-thrower",
+    "number": 16,
+    "name": "Arc Thrower",
+    "icon": "arc-thrower.svg"
+  },
+  {
+    "id": "quasar-cannon",
+    "number": 17,
+    "name": "Quasar Cannon",
+    "icon": "quasar-cannon.svg"
+  },
+  {
+    "id": "sterilizer",
+    "number": 18,
+    "name": "Sterilizer",
+    "icon": "sterilizer.svg"
+  },
+  {
+    "id": "gl-52-de-escalator",
+    "number": 19,
+    "name": "GL-52 De-Escalator",
+    "icon": "gl-52-de-escalator.svg"
+  },
+  {
+    "id": "one-true-flag",
+    "number": 20,
+    "name": "One True Flag",
+    "icon": "one-true-flag.svg"
+  },
+  {
+    "id": "epoch",
+    "number": 21,
+    "name": "Epoch",
+    "icon": "epoch.svg"
+  },
+  {
+    "id": "expendable-napalm",
+    "number": 22,
+    "name": "Expendable Napalm",
+    "icon": "expendable-napalm.svg"
+  },
+  {
+    "id": "speargun",
+    "number": 23,
+    "name": "Speargun",
+    "icon": "speargun.svg"
+  },
+  {
+    "id": "solo-silo",
+    "number": 24,
+    "name": "Solo Silo",
+    "icon": "solo-silo.svg"
+  },
+  {
+    "id": "maxigun",
+    "number": 25,
+    "name": "Maxigun",
+    "icon": "maxigun.svg"
+  },
+  {
+    "id": "defoliation-tool",
+    "number": 26,
+    "name": "Defoliation Tool",
+    "icon": "defoliation-tool.svg"
+  },
+  {
+    "id": "c4-pack",
+    "number": 27,
+    "name": "C4 Pack",
+    "icon": "c4-pack.svg"
+  },
+  {
+    "id": "gl-28",
+    "number": 28,
+    "name": "GL-28",
+    "icon": "gl-28.svg"
+  },
+  {
+    "id": "eat-411",
+    "number": 29,
+    "name": "EAT-411",
+    "icon": "eat-411.svg"
+  },
+  {
+    "id": "cqc-20",
+    "number": 30,
+    "name": "CQC-20",
+    "icon": "cqc-20.svg"
+  },
+  {
+    "id": "cremator",
+    "number": 31,
+    "name": "Cremator",
+    "icon": "cremator.svg"
+  },
+  {
+    "id": "bullet-storm",
+    "number": 32,
+    "name": "Bullet Storm",
+    "icon": "bullet-storm.svg"
+  },
+  {
+    "id": "40-k-meltagun",
+    "number": 33,
+    "name": "40-K Meltagun",
+    "icon": "40-k-meltagun.svg"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "eagle-strafing-run",
+    "number": 46,
+    "name": "Eagle Strafing Run",
+    "icon": "eagle-strafing-run.svg"
+  },
+  {
+    "id": "eagle-airstrike",
+    "number": 47,
+    "name": "Eagle Airstrike",
+    "icon": "eagle-airstrike.svg"
+  },
+  {
+    "id": "eagle-cluster-bomb",
+    "number": 48,
+    "name": "Eagle Cluster Bomb",
+    "icon": "eagle-cluster-bomb.svg"
+  },
+  {
+    "id": "eagle-napalm-airstrike",
+    "number": 49,
+    "name": "Eagle Napalm Airstrike",
+    "icon": "eagle-napalm-airstrike.svg"
+  },
+  {
+    "id": "eagle-smoke-strike",
+    "number": 50,
+    "name": "Eagle Smoke Strike",
+    "icon": "eagle-smoke-strike.svg"
+  },
+  {
+    "id": "eagle-110mm-rocket-pods",
+    "number": 51,
+    "name": "Eagle 110MM Rocket Pods",
+    "icon": "eagle-110mm-rocket-pods.svg"
+  },
+  {
+    "id": "eagle-500kg-bomb",
+    "number": 52,
+    "name": "Eagle 500KG Bomb",
+    "icon": "eagle-500kg-bomb.svg"
+  },
+  {
+    "id": "eagle-gas-strike",
+    "number": 53,
+    "name": "Eagle Gas Strike",
+    "icon": "eagle-gas-strike.svg"
+  }
+]

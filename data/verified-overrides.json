@@ -1,0 +1,83 @@
+{
+  "orbital-precision-strike": {
+    "code": ["→", "→", "↑"],
+    "cooldownSeconds": 80,
+    "callInSeconds": 4.45,
+    "sourceUrl": "https://arrowhead.zendesk.com/hc/en-us/articles/30492249897756-Devoid-of-Liberty-7-1-0",
+    "sourceNote": "Official patch 7.1.0 reduced the base cooldown from 90 to 80 seconds; wiki.gg confirms the standard call-in time. https://helldivers.wiki.gg/wiki/Orbital_Precision_Strike"
+  },
+  "eagle-gas-strike": {
+    "name": "Eagle Gas Airstrike",
+    "code": ["↑", "→", "←", "→"],
+    "cooldownSeconds": 15,
+    "callInSeconds": 4.1,
+    "usesPerRearm": 2,
+    "rearmSeconds": 150,
+    "unlockedFrom": "Counterdissident Hammer campaign",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/Eagle_Gas_Airstrike",
+    "sourceNote": "The in-game name is Eagle Gas Airstrike. Base figures exclude ship upgrades."
+  },
+  "eagle-napalm-airstrike": {
+    "blastRadiusMeters": 10,
+    "sourceUrl": "https://arrowhead.zendesk.com/hc/en-us/articles/29543746599964-Devoid-of-Liberty-7-0-0",
+    "sourceNote": "Official patch 7.0.0 increased explosion radius from 8 to 10 meters and spread the bomb pattern wider."
+  },
+  "anti-tank-mines": {
+    "demolitionStrength": 40,
+    "sourceUrl": "https://arrowhead.zendesk.com/hc/en-us/articles/29543746599964-Devoid-of-Liberty-7-0-0",
+    "sourceNote": "Official patch 7.0.0 increased demolition strength from 30 to 40."
+  },
+  "40-k-meltagun": {
+    "code": ["↓", "←", "↑", "←", "←", "↓"],
+    "cooldownSeconds": 480,
+    "callInSeconds": 7.75,
+    "cost": "110 Medals",
+    "unlockedFrom": "Castellan’s Creed, page 3",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/40-K_Meltagun",
+    "sourceNote": "Current wiki.gg record gives an 8-minute base cooldown; a fan database currently shows 6:50, which appears to be an upgrade-modified figure."
+  },
+  "patriot-exosuit": {
+    "cooldownSeconds": 420,
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/EXO-45_Patriot_Exosuit",
+    "sourceNote": "Wiki.gg documents an actual 420-second base cooldown after patch 1.006.300; Arrowhead's patch note says eight minutes, but wiki editors flag that figure as inaccurate."
+  },
+  "emancipator-exosuit": {
+    "cooldownSeconds": 420,
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/EXO-49_Emancipator_Exosuit",
+    "sourceNote": "Wiki.gg lists 420 seconds and notes the discrepancy with Arrowhead's 1.006.300 patch text."
+  },
+  "lumberer-exosuit": {
+    "cooldownSeconds": 420,
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/EXO-51_Lumberer_Exosuit",
+    "sourceNote": "Wiki.gg lists a 420-second base cooldown."
+  },
+  "breakthrough-exosuit": {
+    "cooldownSeconds": 420,
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/EXO-55_Breakthrough_Exosuit",
+    "sourceNote": "Wiki.gg lists a 420-second base cooldown."
+  },
+  "supply-frv": {
+    "code": ["←", "↓", "←", "←", "↓", "↑", "→"],
+    "cooldownSeconds": 480,
+    "callInSeconds": 10.5,
+    "unlockedFrom": "Census Thunder campaign; broader requisition release announced for October 2026",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/M-103_Supply_FRV",
+    "sourceNote": "Wiki.gg lists the code and base stats; Arrowhead announced broader availability for October without a date."
+  },
+  "incinerator-frv": {
+    "code": ["←", "↓", "→", "←", "↓", "↑", "↑"],
+    "cooldownSeconds": 480,
+    "callInSeconds": 10.5,
+    "availability": "Currently unavailable",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/M-104_Incinerator_FRV",
+    "sourceNote": "The wiki lists the data but says the Incinerator FRV is not currently obtainable or usable."
+  },
+  "td-110-maelstrom": {
+    "code": ["←", "↓", "→", "↓", "←", "↓", "↑", "←", "→"],
+    "cooldownSeconds": 780,
+    "callInSeconds": 10.5,
+    "unlockedFrom": "Armored Eagle campaign",
+    "sourceUrl": "https://helldivers.wiki.gg/wiki/TD-110_Maelstrom",
+    "sourceNote": "Added in patch 1.007.100; base cooldown excludes temporary campaign modifiers."
+  }
+}

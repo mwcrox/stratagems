@@ -1,0 +1,62 @@
+[
+  {
+    "id": "machine-gun-sentry",
+    "number": 54,
+    "name": "Machine Gun Sentry",
+    "icon": "machine-gun-sentry.svg"
+  },
+  {
+    "id": "gatling-sentry",
+    "number": 55,
+    "name": "Gatling Sentry",
+    "icon": "gatling-sentry.svg"
+  },
+  {
+    "id": "mortar-sentry",
+    "number": 56,
+    "name": "Mortar Sentry",
+    "icon": "mortar-sentry.svg"
+  },
+  {
+    "id": "autocannon-sentry",
+    "number": 57,
+    "name": "Autocannon Sentry",
+    "icon": "autocannon-sentry.svg"
+  },
+  {
+    "id": "rocket-sentry",
+    "number": 58,
+    "name": "Rocket Sentry",
+    "icon": "rocket-sentry.svg"
+  },
+  {
+    "id": "ems-mortar-sentry",
+    "number": 59,
+    "name": "EMS Mortar Sentry",
+    "icon": "ems-mortar-sentry.svg"
+  },
+  {
+    "id": "tesla-tower",
+    "number": 60,
+    "name": "Tesla Tower",
+    "icon": "tesla-tower.svg"
+  },
+  {
+    "id": "flame-sentry",
+    "number": 61,
+    "name": "Flame Sentry",
+    "icon": "flame-sentry.svg"
+  },
+  {
+    "id": "laser-sentry",
+    "number": 62,
+    "name": "Laser Sentry",
+    "icon": "laser-sentry.svg"
+  },
+  {
+    "id": "gas-mortar-sentry",
+    "number": 63,
+    "name": "Gas Mortar Sentry",
+    "icon": "gas-mortar-sentry.svg"
+  }
+]

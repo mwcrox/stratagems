@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="en" class="game-in-progress">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111a1f">
+  <meta name="description"
+    content="Play a fan-made Stratagem Hero game with keyboard or touch controls and a top-five leaderboard.">
+  <title>Stratagem Hero | The Elements of Managed Democracy</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .hero-game {
+      --yellow: #f5d65d;
+      --ink: #111a1f;
+      --panel: #1a272c;
+      --line: #455456;
+      --pale: #ecede1;
+      --muted: #a5b5b5;
+      --good: #b9e494;
+      --bad: #f18c7b;
+      color: var(--pale);
+      background: radial-gradient(circle at 50% -10%, #354137 0, #17272a 37%, #10191e 80%);
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    .hero-game *,
+    .hero-game *::before,
+    .hero-game *::after {
+      box-sizing: border-box;
+    }
+
+    .hero-game button,
+    .hero-game input {
+      font: inherit;
+    }
+
+    .hero-game button {
+      cursor: pointer;
+    }
+
+    .hero-game a {
+      color: inherit;
+    }
+
+    .game-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      max-width: 1440px;
+      margin: auto;
+      padding: 1rem clamp(1rem, 4vw, 3rem);
+      border-bottom: 1px solid #ffffff22;
+    }
+
+    .game-brand {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--yellow);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 900;
+      text-decoration: none;
+      font-size: clamp(.75rem, 1.5vw, 1rem);
+    }
+
+    .game-brand-mark {
+      display: grid;
+      place-items: center;
+      width: 2.3rem;
+      height: 2.3rem;
+      border: 2px solid var(--yellow);
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      font-size: 1.2rem;
+    }
+
+    .game-nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      align-items: center;
+    }
+
+    .game-nav-links a {
+      text-decoration: none;
+      padding: .65rem .95rem;
+      border: 1px solid #ffffff3b;
+      text-transform: uppercase;
+      letter-spacing: .11em;
+      font-size: .74rem;
+      font-weight: 800;
+    }
+
+    .game-nav-links a[aria-current="page"] {
+      background: var(--yellow);
+      border-color: var(--yellow);
+      color: var(--ink);
+    }
+
+    .game-main {
+      max-width: 1440px;
+      margin: auto;
+      padding: clamp(1rem, 3vw, 2.5rem) clamp(1rem, 4vw, 3rem) 5rem;
+    }
+
+    .game-eyebrow {
+      margin: 0 0 .5rem;
+      color: var(--yellow);
+      font-size: .75rem;
+      letter-spacing: .24em;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .game-heading {
+      margin: 0;
+      font-size: clamp(2.7rem, 7vw, 6rem);
+      text-transform: uppercase;
+      letter-spacing: -.055em;
+      line-height: .94;
+      font-weight: 950;
+    }
+
+    .game-lede {
+      max-width: 62ch;
+      margin: .8rem 0 2rem;
+      color: var(--muted);
+      font-size: clamp(.92rem, 1.2vw, 1.05rem);
+      line-height: 1.55;
+    }
+
+    .game-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 315px);
+      align-items: start;
+      gap: 1.25rem;
+    }
+
+    .arcade-cabinet {
+      position: relative;
+      overflow: hidden;
+      background: #0b1418;
+      border: 1px solid #78816a;
+      box-shadow: 0 0 0 5px #1c292b, 0 0 0 6px #495447, 0 24px 80px #0009;
+    }
+
+    .cabinet-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .7rem;
+      padding: .75rem 1.2rem;
+      background: repeating-linear-gradient(-45deg, #dfc351 0 10px, #f1d566 10px 20px);
+      color: #182225;
+      text-transform: uppercase;
+      font-size: .7rem;
+      font-weight: 900;
+      letter-spacing: .15em;
+    }
+
+    .cabinet-screen {
+      position: relative;
+      isolation: isolate;
+      min-height: 540px;
+      padding: clamp(1rem, 3vw, 2rem);
+      background: radial-gradient(circle at center 20%, #263b37, #121f24 65%, #0d161b);
+    }
+
+    .cabinet-screen::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .14;
+      z-index: -1;
+      background: repeating-linear-gradient(0deg, transparent 0 4px, #000 5px 6px);
+    }
+
+    .game-hud {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .6rem;
+      margin-bottom: 1rem;
+    }
+
+    .hud-item {
+      background: #071216aa;
+      border: 1px solid #7f8d743d;
+      padding: .7rem .9rem;
+      min-width: 0;
+    }
+
+    .hud-label {
+      display: block;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: .14em;
+      font-size: .63rem;
+    }
+
+    .hud-value {
+      display: block;
+      margin-top: .15rem;
+      color: var(--yellow);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-variant-numeric: tabular-nums;
+      font-weight: 850;
+    }
+
+    .time-track {
+      height: 8px;
+      background: #36423d;
+      overflow: hidden;
+      border: 1px solid #91a08a55;
+    }
+
+    .time-fill {
+      height: 100%;
+      width: 100%;
+      transform-origin: left;
+      background: linear-gradient(90deg, #ffc06d, var(--yellow));
+      transition: transform 80ms linear, background .15s;
+    }
+
+    .time-fill.is-low {
+      background: var(--bad);
+    }
+
+    .mission-label {
+      display: flex;
+      justify-content: space-between;
+      gap: .7rem;
+      margin: 1.6rem 0 .75rem;
+      color: var(--muted);
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .17em;
+      font-weight: 800;
+    }
+
+    .mission-label strong {
+      color: var(--yellow);
+    }
+
+    .stratagem-display {
+      display: flex;
+      align-items: center;
+      gap: clamp(.9rem, 2.4vw, 1.6rem);
+      min-height: 130px;
+      border-top: 1px solid #b3beaa3d;
+      border-bottom: 1px solid #b3beaa3d;
+      padding: 1rem 0;
+    }
+
+    .stratagem-icon {
+      flex: none;
+      width: clamp(72px, 12vw, 108px);
+      height: clamp(72px, 12vw, 108px);
+      object-fit: contain;
+      border: 1px solid #f5d65d88;
+      background: #11191a;
+      padding: .5rem;
+    }
+
+    .stratagem-icon[hidden] {
+      display: none;
+    }
+
+    .stratagem-copy {
+      min-width: 0;
+    }
+
+    .stratagem-category {
+      color: var(--yellow);
+      font-size: .68rem;
+      text-transform: uppercase;
+      letter-spacing: .17em;
+      font-weight: 800;
+    }
+
+    .stratagem-name {
+      margin: .25rem 0 .75rem;
+      font-size: clamp(1.1rem, 2.4vw, 1.75rem);
+      line-height: 1.1;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .code-sequence {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .25rem;
+      min-height: 2.6rem;
+    }
+
+    .code-arrow {
+      display: grid;
+      place-items: center;
+      width: clamp(2rem, 5vw, 2.65rem);
+      height: clamp(2rem, 5vw, 2.65rem);
+      color: var(--yellow);
+      background: #28342e;
+      border: 1px solid #8b9a75;
+      font-size: 1.3rem;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .code-arrow.is-entered {
+      color: #17241d;
+      background: var(--good);
+      border-color: var(--good);
+    }
+
+    .input-feedback {
+      min-height: 1.5rem;
+      margin: .8rem 0 .3rem;
+      color: var(--good);
+      font-size: .8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+    }
+
+    .input-feedback.is-error {
+      color: var(--bad);
+    }
+
+    .queue-label {
+      margin: 1.35rem 0 .45rem;
+      color: var(--muted);
+      font-size: .65rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .queue-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: .5rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .queue-item {
+      min-width: 0;
+      padding: .65rem;
+      border: 1px solid #6a7a684d;
+      background: #152322;
+      color: #d6ded3;
+      font-size: .73rem;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .queue-item span {
+      color: var(--yellow);
+      margin-right: .4rem;
+    }
+
+    .queue-item.queue-extra {
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .game-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      padding: 1.25rem;
+      background: #0e1c20e9;
+      text-align: center;
+    }
+
+    .game-overlay[hidden],
+    .round-summary[hidden] {
+      display: none;
+    }
+
+    .overlay-content {
+      width: min(100%, 450px);
+    }
+
+    .overlay-kicker {
+      margin: 0 0 .75rem;
+      color: var(--yellow);
+      letter-spacing: .24em;
+      font-size: .68rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .overlay-title {
+      margin: 0 0 .8rem;
+      font-size: clamp(2.15rem, 6vw, 4rem);
+      line-height: .95;
+      text-transform: uppercase;
+      letter-spacing: -.045em;
+    }
+
+    .overlay-text {
+      margin: 0 auto 1.2rem;
+      max-width: 38ch;
+      color: #bdccc7;
+      line-height: 1.5;
+      font-size: .9rem;
+    }
+
+    .game-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .4rem;
+      border: 1px solid var(--yellow);
+      background: var(--yellow);
+      color: #111a1f;
+      padding: .85rem 1.1rem;
+      font-size: .75rem;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      min-height: 44px;
+    }
+
+    .game-button:hover,
+    .game-button:focus-visible {
+      filter: brightness(1.12);
+    }
+
+    .game-button.ghost {
+      background: transparent;
+      color: var(--yellow);
+    }
+
+    .overlay-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+
+    .score-large {
+      display: block;
+      color: var(--yellow);
+      font-size: clamp(2.5rem, 9vw, 5rem);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      font-weight: 900;
+      margin: .3rem 0 1.1rem;
+    }
+
+    .publish-form {
+      display: grid;
+      gap: .7rem;
+      margin: 1rem auto;
+      max-width: 350px;
+      text-align: left;
+    }
+
+    .publish-form[hidden] {
+      display: none;
+    }
+
+    .publish-form label {
+      font-size: .7rem;
+      text-transform: uppercase;
+      color: var(--yellow);
+      font-weight: 900;
+      letter-spacing: .12em;
+    }
+
+    .publish-form input {
+      width: 100%;
+      padding: .8rem;
+      border: 1px solid #b6bd9d;
+      background: #0e1c20;
+      color: #fff;
+      font-size: 1rem;
+      min-height: 44px;
+    }
+
+    .publish-form input:focus-visible {
+      outline: 2px solid var(--yellow);
+      outline-offset: 2px;
+    }
+
+    .publish-form .overlay-actions {
+      justify-content: stretch;
+    }
+
+    .publish-form .overlay-actions button {
+      flex: 1;
+    }
+
+    .publish-note {
+      min-height: 1.2rem;
+      margin: .2rem 0 .7rem;
+      color: var(--good);
+      font-size: .75rem;
+    }
+
+    .round-summary {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      background: #0d1c20ef;
+      text-align: center;
+    }
+
+    .round-summary h2 {
+      margin: .3rem 0 1rem;
+      color: var(--yellow);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      text-transform: uppercase;
+    }
+
+    .summary-lines {
+      margin: auto;
+      width: min(100%, 300px);
+    }
+
+    .summary-lines p {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: .5rem 0;
+      border-bottom: 1px solid #9da99955;
+      color: #d0dad4;
+      font-size: .85rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    .summary-lines strong {
+      color: var(--yellow);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .touch-controls {
+      display: none;
+      padding: 1rem 0 .15rem;
+      border-top: 1px solid #829a774b;
+      margin-top: 1rem;
+    }
+
+    .touch-help {
+      margin: 0 0 .8rem;
+      text-align: center;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: .7rem;
+      letter-spacing: .14em;
+      font-weight: 800;
+    }
+
+    .dpad {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(64px, 88px));
+      grid-template-rows: repeat(3, 64px);
+      justify-content: center;
+      gap: .3rem;
+      margin: auto;
+      user-select: none;
+    }
+
+    .dpad button {
+      display: grid;
+      place-items: center;
+      min-width: 64px;
+      min-height: 64px;
+      border: 1px solid #b8a65b;
+      background: #273432;
+      color: var(--yellow);
+      font-size: 1.7rem;
+      font-weight: 900;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .dpad button:active,
+    .dpad button:focus-visible {
+      background: var(--yellow);
+      color: #172421;
+    }
+
+    .dpad [data-dir="up"] {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .dpad [data-dir="left"] {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .dpad [data-dir="right"] {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .dpad [data-dir="down"] {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .scoreboard {
+      background: #152125d9;
+      border: 1px solid #7a866b;
+      padding: 1.25rem;
+      box-shadow: 0 16px 35px #0004;
+    }
+
+    .scoreboard-kicker {
+      display: block;
+      margin-bottom: .5rem;
+      color: var(--yellow);
+      font-size: .68rem;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-weight: 800;
+    }
+
+    .scoreboard h2 {
+      margin: 0 0 1.15rem;
+      font-size: 1.5rem;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .leaderboard-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .leaderboard-list li {
+      display: grid;
+      grid-template-columns: 1.4rem minmax(0, 1fr) auto;
+      gap: .6rem;
+      align-items: baseline;
+      padding: .8rem 0;
+      border-top: 1px solid #80958344;
+      font-size: .86rem;
+    }
+
+    .leaderboard-list .rank {
+      color: var(--yellow);
+      font-weight: 900;
+    }
+
+    .leaderboard-list .leader-name {
+      overflow-wrap: anywhere;
+    }
+
+    .leaderboard-list .leader-points {
+      color: var(--yellow);
+      font-variant-numeric: tabular-nums;
+      font-weight: 850;
+    }
+
+    .scoreboard-empty {
+      margin: 1rem 0;
+      color: var(--muted);
+      font-size: .85rem;
+      line-height: 1.45;
+    }
+
+    .leaderboard-status {
+      margin: 1rem 0 0;
+      padding-top: 1rem;
+      border-top: 1px solid #80958344;
+      color: var(--muted);
+      font-size: .73rem;
+      line-height: 1.4;
+    }
+
+    .game-instructions {
+      margin: 1.5rem 0 0;
+      padding: 1rem;
+      border-left: 3px solid var(--yellow);
+      color: #b8c5bf;
+      background: #142227;
+      font-size: .85rem;
+      line-height: 1.55;
+    }
+
+    .game-instructions strong {
+      color: var(--yellow);
+    }
+
+    .game-footer {
+      margin-top: 1.3rem;
+      color: #9eaaa5;
+      font-size: .72rem;
+      line-height: 1.5;
+    }
+
+    .game-footer a {
+      text-underline-offset: .2em;
+    }
+
+    .quit-button {
+      min-height: 36px;
+      padding: .35rem .8rem;
+      border: 1px solid #182225;
+      background: #182225;
+      color: var(--yellow);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .quit-button:hover,
+    .quit-button:focus-visible {
+      background: #354238;
+      color: #fff;
+    }
+
+    .hero-game:not(.is-in-session) .quit-button {
+      display: none;
+    }
+
+    html.game-in-progress {
+      height: 100%;
+      overflow: hidden;
+      overscroll-behavior: none;
+      scroll-behavior: auto;
+    }
+
+    .hero-game.is-in-session {
+      height: 100vh;
+      height: 100dvh;
+      min-height: 0;
+      overflow: hidden;
+      overscroll-behavior: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-game.is-in-session .game-nav,
+    .hero-game.is-in-session .game-eyebrow,
+    .hero-game.is-in-session .game-heading,
+    .hero-game.is-in-session .game-lede,
+    .hero-game.is-in-session .scoreboard {
+      display: none;
+    }
+
+    .hero-game.is-in-session .game-main {
+      width: 100%;
+      max-width: none;
+      flex: 1;
+      min-height: 0;
+      padding: max(6px, env(safe-area-inset-top)) max(6px, 1vw) max(6px, env(safe-area-inset-bottom));
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-game.is-in-session .game-layout {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      gap: 0;
+    }
+
+    .hero-game.is-in-session .arcade-cabinet {
+      flex: 1;
+      min-width: 0;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none;
+    }
+
+    .hero-game.is-in-session .cabinet-top {
+      flex: none;
+      padding: .4rem .8rem;
+      min-height: 40px;
+    }
+
+    .hero-game.is-in-session .cabinet-screen {
+      min-height: 0;
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: clamp(8px, 1.6dvh, 18px);
+    }
+
+    .hero-game.is-in-session .game-hud {
+      flex: none;
+      margin-bottom: .45rem;
+    }
+
+    .hero-game.is-in-session .time-track {
+      flex: none;
+    }
+
+    .hero-game.is-in-session .mission-label {
+      flex: none;
+      margin: .55rem 0 .25rem;
+    }
+
+    .hero-game.is-in-session .stratagem-display {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: hidden;
+      padding: .35rem 0;
+    }
+
+    .hero-game.is-in-session .input-feedback {
+      flex: none;
+      min-height: 1.25rem;
+      margin: .3rem 0;
+    }
+
+    .hero-game.is-in-session .queue-label {
+      flex: none;
+      margin: .3rem 0;
+    }
+
+    .hero-game.is-in-session .queue-list {
+      flex: none;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .hero-game.is-in-session .game-overlay,
+    .hero-game.is-in-session .round-summary {
+      overflow-y: auto;
+    }
+
+    @media(max-width:900px) {
+      .game-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .scoreboard {
+        order: 2;
+      }
+    }
+
+    @media(max-width:650px) {
+      .game-nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .cabinet-screen {
+        min-height: 575px;
+        padding: 1rem;
+      }
+
+      .game-hud {
+        gap: .35rem;
+      }
+
+      .hud-item {
+        padding: .5rem;
+      }
+
+      .hud-label {
+        font-size: .56rem;
+      }
+
+      .stratagem-display {
+        gap: .75rem;
+      }
+
+      .stratagem-icon {
+        width: 65px;
+        height: 65px;
+      }
+
+      .queue-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media(max-width:760px), (pointer:coarse) {
+      .touch-controls {
+        display: block;
+      }
+    }
+
+    @media(max-width:450px) {
+      .game-brand {
+        font-size: .7rem;
+      }
+
+      .cabinet-screen {
+        min-height: 630px;
+      }
+
+      .code-arrow {
+        width: 1.95rem;
+        height: 1.95rem;
+      }
+
+      .stratagem-name {
+        font-size: 1rem;
+      }
+
+      .dpad {
+        grid-template-columns: repeat(3, 72px);
+        grid-template-rows: repeat(3, 58px);
+      }
+
+      .dpad button {
+        min-height: 58px;
+      }
+    }
+
+    @media(max-width:760px), (pointer:coarse) {
+      .hero-game.is-in-session .cabinet-top-label {
+        display: none;
+      }
+
+      .hero-game.is-in-session .queue-label,
+      .hero-game.is-in-session .queue-list {
+        display: none;
+      }
+
+      .hero-game.is-in-session .touch-controls {
+        flex: none;
+        margin-top: auto;
+        padding: .2rem 0 0;
+        border: 0;
+      }
+
+      .hero-game.is-in-session .touch-help {
+        margin: 0 0 .2rem;
+        font-size: .6rem;
+      }
+
+      .hero-game.is-in-session .dpad {
+        --pad-size: clamp(44px, 8.5dvh, 70px);
+        grid-template-columns: repeat(3, var(--pad-size));
+        grid-template-rows: repeat(3, var(--pad-size));
+        gap: 3px;
+      }
+
+      .hero-game.is-in-session .dpad button {
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+        min-height: 0;
+      }
+    }
+
+    @media(max-height:620px) {
+
+      .hero-game.is-in-session .queue-label,
+      .hero-game.is-in-session .queue-list {
+        display: none;
+      }
+
+      .hero-game.is-in-session .hud-item {
+        padding: .3rem .5rem;
+      }
+
+      .hero-game.is-in-session .hud-value {
+        font-size: clamp(1.1rem, 3dvh, 1.5rem);
+      }
+
+      .hero-game.is-in-session .mission-label {
+        margin: .3rem 0 .1rem;
+      }
+
+      .hero-game.is-in-session .stratagem-icon {
+        width: clamp(42px, 10dvh, 64px);
+        height: clamp(42px, 10dvh, 64px);
+      }
+
+      .hero-game.is-in-session .stratagem-name {
+        margin: .15rem 0 .3rem;
+      }
+
+      .hero-game.is-in-session .input-feedback {
+        margin: .15rem 0;
+        font-size: .7rem;
+      }
+
+      .hero-game.is-in-session .touch-help {
+        display: none;
+      }
+
+      .hero-game.is-in-session .dpad {
+        --pad-size: clamp(44px, 8dvh, 56px);
+      }
+    }
+
+    @media(max-height:480px) and (orientation:portrait) {
+      .hero-game.is-in-session .cabinet-top {
+        min-height: 34px;
+        padding: .2rem .5rem;
+      }
+
+      .hero-game.is-in-session .cabinet-top-label {
+        display: none;
+      }
+
+      .hero-game.is-in-session .stratagem-display {
+        gap: .4rem;
+      }
+
+      .hero-game.is-in-session .code-arrow {
+        width: 1.55rem;
+        height: 1.55rem;
+        font-size: 1rem;
+      }
+
+      .hero-game.is-in-session .dpad {
+        --pad-size: 44px;
+      }
+    }
+
+    @media(orientation:landscape) and (max-height:600px) and (max-width:760px), (orientation:landscape) and (max-height:600px) and (pointer:coarse) {
+      .hero-game.is-in-session .cabinet-screen {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+        column-gap: .6rem;
+      }
+
+      .hero-game.is-in-session .game-hud {
+        grid-area: 1/1;
+        margin-bottom: .2rem;
+      }
+
+      .hero-game.is-in-session .time-track {
+        grid-area: 2/1;
+      }
+
+      .hero-game.is-in-session .mission-label {
+        grid-area: 3/1;
+      }
+
+      .hero-game.is-in-session .stratagem-display {
+        grid-area: 4/1;
+        min-height: 0;
+        gap: .5rem;
+      }
+
+      .hero-game.is-in-session .stratagem-name {
+        font-size: clamp(.85rem, 3dvh, 1.2rem);
+      }
+
+      .hero-game.is-in-session .code-arrow {
+        width: clamp(24px, 7dvh, 34px);
+        height: clamp(24px, 7dvh, 34px);
+        font-size: 1rem;
+      }
+
+      .hero-game.is-in-session .input-feedback {
+        grid-area: 5/1;
+        min-height: 0;
+      }
+
+      .hero-game.is-in-session .touch-controls {
+        grid-area: 1/2/6/3;
+        align-self: center;
+        margin: 0;
+      }
+
+      .hero-game.is-in-session .dpad {
+        --pad-size: clamp(44px, 12dvh, 58px);
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      .time-fill {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="hero-game is-in-session">
+  <header class="game-nav">
+    <a class="game-brand" href="./index.html"><span class="game-brand-mark" aria-hidden="true">✦</span><span>The
+        Elements of<br>Managed Democracy</span></a>
+    <nav class="game-nav-links" aria-label="Primary navigation">
+      <a href="./index.html">The table</a>
+      <a href="./game.html" aria-current="page">Stratagem Hero</a>
+    </nav>
+  </header>
+  <main class="game-main">
+    <p class="game-eyebrow">Super Destroyer training deck / Arcade 01</p>
+    <h1 class="game-heading">Stratagem Hero</h1>
+    <p class="game-lede">Read the call-in code. Enter the arrows before the timer runs out. Complete each round to keep
+      your run alive.</p>
+    <div class="game-layout">
+      <section class="arcade-cabinet" aria-label="Stratagem Hero arcade game">
+        <div class="cabinet-top"><span>Super Earth Armed Forces</span><span class="cabinet-top-label">Training System //
+            01</span><button class="quit-button" type="button" id="quitButton">Quit run</button></div>
+        <div class="cabinet-screen" id="cabinetScreen">
+          <div class="game-hud" aria-live="off">
+            <div class="hud-item"><span class="hud-label">Round</span><span class="hud-value" id="roundValue">01</span>
+            </div>
+            <div class="hud-item"><span class="hud-label">Score</span><span class="hud-value" id="scoreValue">0</span>
+            </div>
+            <div class="hud-item"><span class="hud-label">Time</span><span class="hud-value" id="timeValue">10.0</span>
+            </div>
+          </div>
+          <div class="time-track" role="progressbar" aria-label="Time remaining" aria-valuemin="0" aria-valuemax="10"
+            aria-valuenow="10" id="timeTrack">
+            <div class="time-fill" id="timeFill"></div>
+          </div>
+          <div class="mission-label"><span>Call-in sequence</span><strong id="roundProgress">0 / 6</strong></div>
+          <div class="stratagem-display">
+            <img id="stratagemIcon" class="stratagem-icon" alt="" hidden>
+            <div class="stratagem-copy">
+              <div class="stratagem-category" id="stratagemCategory">Awaiting orders</div>
+              <h2 class="stratagem-name" id="stratagemName">Ready for deployment</h2>
+              <div class="code-sequence" id="codeSequence" aria-label="Current directional code"></div>
+            </div>
+          </div>
+          <p class="input-feedback" id="inputFeedback" role="status" aria-live="polite">Press start to begin training.
+          </p>
+          <p class="queue-label">Up next</p>
+          <ol class="queue-list" id="queueList" aria-label="Upcoming stratagems"></ol>
+          <div class="touch-controls" aria-label="Touch controls">
+            <p class="touch-help">Tap the directional pad</p>
+            <div class="dpad">
+              <button type="button" data-dir="up" aria-label="Up">↑</button>
+              <button type="button" data-dir="left" aria-label="Left">←</button>
+              <button type="button" data-dir="right" aria-label="Right">→</button>
+              <button type="button" data-dir="down" aria-label="Down">↓</button>
+            </div>
+          </div>
+          <div class="round-summary" id="roundSummary" hidden aria-live="polite">
+            <div>
+              <p class="overlay-kicker">Round complete</p>
+              <h2 id="summaryHeading">Democracy delivered</h2>
+              <div class="summary-lines">
+                <p><span>Round bonus</span><strong id="summaryRound">0</strong></p>
+                <p><span>Time bonus</span><strong id="summaryTime">0</strong></p>
+                <p><span>Perfect bonus</span><strong id="summaryPerfect">0</strong></p>
+                <p><span>Total score</span><strong id="summaryTotal">0</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="game-overlay" id="startOverlay">
+            <div class="overlay-content">
+              <p class="overlay-kicker">Duty awaits</p>
+              <h2 class="overlay-title">Ready, Helldiver?</h2>
+              <p class="overlay-text">Six stratagems in round one. Each round adds another, up to sixteen. Use arrow
+                keys or W A S D; touch players get a directional pad.</p>
+              <button class="game-button" type="button" id="startButton">Start game <span
+                  aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <div class="game-overlay" id="gameOverOverlay" hidden>
+            <div class="overlay-content">
+              <p class="overlay-kicker">Transmission ended</p>
+              <h2 class="overlay-title">Game over</h2>
+              <span class="score-large" id="finalScore">0</span>
+              <p class="overlay-text" id="gameOverMessage">Your final score.</p>
+              <form class="publish-form" id="publishForm" hidden>
+                <label for="playerName">Top five achieved. Publish your name?</label>
+                <input id="playerName" name="playerName" autocomplete="nickname" maxlength="20" minlength="2"
+                  placeholder="Your name" required>
+                <div class="overlay-actions"><button class="game-button" type="submit" id="publishButton">Publish
+                    score</button><button class="game-button ghost" type="button" id="skipButton">Skip</button></div>
+              </form>
+              <p class="publish-note" id="publishNote" role="status" aria-live="polite"></p>
+              <div class="overlay-actions"><button class="game-button ghost" type="button" id="restartButton">Play
+                  again</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="scoreboard" aria-label="Top five leaderboard">
+        <span class="scoreboard-kicker">Hall of heroes</span>
+        <h2>Top five scores</h2>
+        <ol class="leaderboard-list" id="leaderboardList"></ol>
+        <p class="scoreboard-empty" id="leaderboardEmpty">Loading scores…</p>
+        <p class="leaderboard-status" id="leaderboardStatus" role="status" aria-live="polite">Checking leaderboard…</p>
+        <p class="game-instructions"><strong>How to play:</strong> Match the displayed arrows. A wrong direction
+          restarts that code. Each correct code restores one second. Your run ends when time reaches zero.</p>
+        <p class="game-footer">Fan-made tribute. Not affiliated with Arrowhead Game Studios or Sony Interactive
+          Entertainment. Timer and bonus scoring approximate the in-game arcade.</p>
+      </aside>
+    </div>
+  </main>
+  <script type="module" src="./js/game.js"></script>
+</body>
+
+</html>

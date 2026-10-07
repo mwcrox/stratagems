@@ -1,0 +1,56 @@
+[
+  {
+    "id": "patriot-exosuit",
+    "number": 85,
+    "name": "Patriot Exosuit",
+    "icon": "patriot-exosuit.svg"
+  },
+  {
+    "id": "emancipator-exosuit",
+    "number": 86,
+    "name": "Emancipator Exosuit",
+    "icon": "emancipator-exosuit.svg"
+  },
+  {
+    "id": "lumberer-exosuit",
+    "number": 87,
+    "name": "Lumberer Exosuit",
+    "icon": "lumberer-exosuit.svg"
+  },
+  {
+    "id": "breakthrough-exosuit",
+    "number": 88,
+    "name": "Breakthrough Exosuit",
+    "icon": "breakthrough-exosuit.svg"
+  },
+  {
+    "id": "fast-recon-vehicle",
+    "number": 89,
+    "name": "Fast Recon Vehicle",
+    "icon": "fast-recon-vehicle.svg"
+  },
+  {
+    "id": "supply-frv",
+    "number": 90,
+    "name": "Supply FRV",
+    "icon": "supply-frv.svg"
+  },
+  {
+    "id": "incinerator-frv",
+    "number": 91,
+    "name": "Incinerator FRV",
+    "icon": "incinerator-frv.svg"
+  },
+  {
+    "id": "td-110-maelstrom",
+    "number": 92,
+    "name": "TD-110 Maelstrom",
+    "icon": "td-110-maelstrom.svg"
+  },
+  {
+    "id": "bastion-mk-xvi",
+    "number": 93,
+    "name": "Bastion MK XVI",
+    "icon": "bastion-mk-xvi.svg"
+  }
+]
